@@ -1,0 +1,1039 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "fantastic-admin",
+      "version": "0.1.0",
+      "scripts": {
+        "dev": "vite",
+        "build:test": "vite build --mode test",
+        "build": "vite build",
+        "serve:test": "hs ./dist-test -o",
+        "serve": "hs ./dist -o",
+        "serve:example": "hs ./dist-example -o",
+        "svgo": "svgo -f src/assets/icons",
+        "new": "plop",
+        "lint:eslint": "eslint src/**/*.{js,vue} --fix",
+        "lint:stylelint": "stylelint src/**/*.{vue,scss,less} --fix",
+        "prepare": "husky install"
+      },
+      "dependencies": {
+        "@tinymce/tinymce-vue": "^4.0.4",
+        "axios": "^0.21.1",
+        "dayjs": "^1.10.6",
+        "element-plus": "^1.1.0-beta.8",
+        "hotkeys-js": "^3.8.7",
+        "js-cookie": "^3.0.1",
+        "mitt": "^3.0.0",
+        "mockjs": "^1.1.0",
+        "nprogress": "^0.2.0",
+        "path-browserify": "^1.0.1",
+        "path-to-regexp": "^6.2.0",
+        "qs": "^6.10.1",
+        "screenfull": "^5.1.0",
+        "tinymce": "^5.9.1",
+        "vue": "^3.2.8",
+        "vue-router": "^4.0.11",
+        "vuex": "^4.0.2"
+      },
+      "devDependencies": {
+        "@vitejs/plugin-vue": "^1.6.0",
+        "@vue/compiler-sfc": "^3.2.8",
+        "eslint": "^7.32.0",
+        "eslint-plugin-vue": "^7.17.0",
+        "http-server": "^13.0.1",
+        "husky": "^7.0.2",
+        "lint-staged": "^11.1.2",
+        "plop": "^2.7.4",
+        "sass": "^1.39.0",
+        "stylelint": "^13.13.1",
+        "stylelint-config-recommended-scss": "^4.3.0",
+        "stylelint-config-standard": "^22.0.0",
+        "stylelint-scss": "^3.20.1",
+        "svgo": "^2.5.0",
+        "unplugin-vue-components": "^0.14.11",
+        "vite": "^2.5.3",
+        "vite-plugin-banner": "^0.1.3",
+        "vite-plugin-compression": "^0.3.5",
+        "vite-plugin-html": "^2.1.0",
+        "vite-plugin-mock": "^2.9.6",
+        "vite-plugin-restart": "^0.0.2",
+        "vite-plugin-spritesmith": "^0.1.1",
+        "vite-plugin-svg-icons": "^1.0.4",
+        "vue-eslint-parser": "^7.10.0"
+      }
+    },
+    "prefix": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/yaozhihao/.pnpm-store/v3",
+    "virtualStoreDir": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/@vitejs/plugin-vue/1.6.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@vitejs/plugin-vue",
+      "rawSpec": "^1.6.0"
+    }
+  },
+  "5 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/@vue/compiler-sfc/3.2.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@vue/compiler-sfc",
+      "rawSpec": "^3.2.8"
+    }
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/eslint/7.32.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint",
+      "rawSpec": "^7.32.0"
+    }
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/eslint-plugin-vue/7.17.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-vue",
+      "rawSpec": "^7.17.0"
+    }
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/http-server/13.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "http-server",
+      "rawSpec": "^13.0.1"
+    }
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/husky/7.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "husky",
+      "rawSpec": "^7.0.2"
+    }
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/lint-staged/11.1.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "lint-staged",
+      "rawSpec": "^11.1.2"
+    }
+  },
+  "11 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/plop/2.7.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "plop",
+      "rawSpec": "^2.7.4"
+    }
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/sass/1.39.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "sass",
+      "rawSpec": "^1.39.0"
+    }
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/stylelint/13.13.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "stylelint",
+      "rawSpec": "^13.13.1"
+    }
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/stylelint-config-recommended-scss/4.3.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "stylelint-config-recommended-scss",
+      "rawSpec": "^4.3.0"
+    }
+  },
+  "15 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/stylelint-config-standard/22.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "stylelint-config-standard",
+      "rawSpec": "^22.0.0"
+    }
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/stylelint-scss/3.20.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "stylelint-scss",
+      "rawSpec": "^3.20.1"
+    }
+  },
+  "17 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/svgo/2.5.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svgo",
+      "rawSpec": "^2.5.0"
+    }
+  },
+  "18 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/unplugin-vue-components/0.14.11",
+    "wanted": {
+      "dependentId": ".",
+      "name": "unplugin-vue-components",
+      "rawSpec": "^0.14.11"
+    }
+  },
+  "19 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/vite/2.5.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite",
+      "rawSpec": "^2.5.3"
+    }
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/vite-plugin-banner/0.1.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite-plugin-banner",
+      "rawSpec": "^0.1.3"
+    }
+  },
+  "21 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/vite-plugin-compression/0.3.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite-plugin-compression",
+      "rawSpec": "^0.3.5"
+    }
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/vite-plugin-html/2.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite-plugin-html",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "23 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/vite-plugin-mock/2.9.6",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite-plugin-mock",
+      "rawSpec": "^2.9.6"
+    }
+  },
+  "24 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/vite-plugin-restart/0.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite-plugin-restart",
+      "rawSpec": "^0.0.2"
+    }
+  },
+  "25 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/vite-plugin-spritesmith/0.1.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite-plugin-spritesmith",
+      "rawSpec": "^0.1.1"
+    }
+  },
+  "26 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/vite-plugin-svg-icons/1.0.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite-plugin-svg-icons",
+      "rawSpec": "^1.0.4"
+    }
+  },
+  "27 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/vue-eslint-parser/7.10.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vue-eslint-parser",
+      "rawSpec": "^7.10.0"
+    }
+  },
+  "28 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/@tinymce/tinymce-vue/4.0.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@tinymce/tinymce-vue",
+      "rawSpec": "^4.0.4"
+    }
+  },
+  "29 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/axios/0.21.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "axios",
+      "rawSpec": "^0.21.1"
+    }
+  },
+  "30 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/dayjs/1.10.6",
+    "wanted": {
+      "dependentId": ".",
+      "name": "dayjs",
+      "rawSpec": "^1.10.6"
+    }
+  },
+  "31 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/element-plus/1.1.0-beta.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "element-plus",
+      "rawSpec": "^1.1.0-beta.8"
+    }
+  },
+  "32 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/hotkeys-js/3.8.7",
+    "wanted": {
+      "dependentId": ".",
+      "name": "hotkeys-js",
+      "rawSpec": "^3.8.7"
+    }
+  },
+  "33 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/js-cookie/3.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "js-cookie",
+      "rawSpec": "^3.0.1"
+    }
+  },
+  "34 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/mitt/3.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "mitt",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "35 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/mockjs/1.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "mockjs",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "36 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/nprogress/0.2.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "nprogress",
+      "rawSpec": "^0.2.0"
+    }
+  },
+  "37 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-browserify/1.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "path-browserify",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "38 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/path-to-regexp/6.2.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "path-to-regexp",
+      "rawSpec": "^6.2.0"
+    }
+  },
+  "39 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/screenfull/5.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "screenfull",
+      "rawSpec": "^5.1.0"
+    }
+  },
+  "40 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/tinymce/5.9.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "tinymce",
+      "rawSpec": "^5.9.1"
+    }
+  },
+  "41 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/vue/3.2.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vue",
+      "rawSpec": "^3.2.8"
+    }
+  },
+  "42 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/vue-router/4.0.11",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vue-router",
+      "rawSpec": "^4.0.11"
+    }
+  },
+  "43 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.nlark.com/vuex/4.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vuex",
+      "rawSpec": "^4.0.2"
+    }
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/@vitejs/plugin-vue/1.6.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "45 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/@vitejs/plugin-vue/1.6.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "46 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/@vue/compiler-sfc/3.2.8",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "47 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/@vue/compiler-sfc/3.2.8",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "48 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/eslint/7.32.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/eslint/7.32.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "50 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/eslint-plugin-vue/7.17.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/eslint-plugin-vue/7.17.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "52 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/http-server/13.0.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "53 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/http-server/13.0.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "54 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/husky/7.0.2",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "55 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/husky/7.0.2",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "56 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/lint-staged/11.1.2",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "57 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/lint-staged/11.1.2",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "58 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/sass/1.39.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "59 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/sass/1.39.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "60 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/stylelint/13.13.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "61 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/stylelint/13.13.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "62 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/stylelint-config-recommended-scss/4.3.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "63 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/stylelint-config-recommended-scss/4.3.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "64 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/stylelint-config-standard/22.0.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "65 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/stylelint-config-standard/22.0.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "66 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/stylelint-scss/3.20.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "67 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/stylelint-scss/3.20.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "68 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/svgo/2.5.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/svgo/2.5.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "70 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/unplugin-vue-components/0.14.11",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "71 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/unplugin-vue-components/0.14.11",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "72 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite/2.5.3",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "73 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite/2.5.3",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "74 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-banner/0.1.3",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "75 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-banner/0.1.3",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "76 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-compression/0.3.5",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "77 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-compression/0.3.5",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "78 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-html/2.1.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "79 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-html/2.1.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "80 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-mock/2.9.6",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "81 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-mock/2.9.6",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "82 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-restart/0.0.2",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "83 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-restart/0.0.2",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "84 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-spritesmith/0.1.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "85 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-spritesmith/0.1.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "86 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-svg-icons/1.0.4",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "87 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vite-plugin-svg-icons/1.0.4",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "88 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vue-eslint-parser/7.10.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "89 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vue-eslint-parser/7.10.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "90 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/@tinymce/tinymce-vue/4.0.4",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "91 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/@tinymce/tinymce-vue/4.0.4",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "92 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/dayjs/1.10.6",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "93 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/dayjs/1.10.6",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "94 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/hotkeys-js/3.8.7",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "95 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/hotkeys-js/3.8.7",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "96 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/js-cookie/3.0.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "97 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/js-cookie/3.0.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "98 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/mitt/3.0.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "99 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/mitt/3.0.0",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "100 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/tinymce/5.9.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "101 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/tinymce/5.9.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "102 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vue/3.2.8",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "103 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vue/3.2.8",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "104 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vue-router/4.0.11",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "105 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vue-router/4.0.11",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "106 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vuex/4.0.2",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "107 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/vuex/4.0.2",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "108 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/element-plus/1.1.0-beta.8",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "109 debug pnpm:progress": {
+    "packageId": "registry.nlark.com/element-plus/1.1.0-beta.8",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "110 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 1,
+      "request": {
+        "url": "https://registry.npmjs.org/screenfull/download/screenfull-5.1.0.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/screenfull/download/screenfull-5.1.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/screenfull/download/screenfull-5.1.0.tgz"
+  },
+  "111 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 1,
+      "request": {
+        "url": "https://registry.npmjs.org/nprogress/download/nprogress-0.2.0.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/nprogress/download/nprogress-0.2.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/nprogress/download/nprogress-0.2.0.tgz"
+  },
+  "112 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 1,
+      "request": {
+        "url": "https://registry.npmjs.org/mockjs/download/mockjs-1.1.0.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/mockjs/download/mockjs-1.1.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/mockjs/download/mockjs-1.1.0.tgz"
+  },
+  "113 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 1,
+      "request": {
+        "url": "https://registry.npmjs.org/path-browserify/download/path-browserify-1.0.1.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/path-browserify/download/path-browserify-1.0.1.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/path-browserify/download/path-browserify-1.0.1.tgz"
+  },
+  "114 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 1,
+      "request": {
+        "url": "https://registry.npmjs.org/plop/download/plop-2.7.4.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/plop/download/plop-2.7.4.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/plop/download/plop-2.7.4.tgz"
+  },
+  "115 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 1,
+      "request": {
+        "url": "https://registry.npmjs.org/axios/download/axios-0.21.1.tgz?cache=0&sync_timestamp=1608623177223&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.21.1.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/axios/download/axios-0.21.1.tgz?cache=0&sync_timestamp=1608623177223&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.21.1.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/axios/download/axios-0.21.1.tgz?cache=0&sync_timestamp=1608623177223&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.21.1.tgz"
+  },
+  "116 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 1,
+      "request": {
+        "url": "https://registry.npmjs.org/path-to-regexp/download/path-to-regexp-6.2.0.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/path-to-regexp/download/path-to-regexp-6.2.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/path-to-regexp/download/path-to-regexp-6.2.0.tgz"
+  },
+  "117 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/qs/6.10.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "qs",
+      "rawSpec": "^6.10.1"
+    }
+  },
+  "118 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/qs/6.10.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "resolved"
+  },
+  "119 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/qs/6.10.1",
+    "requester": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin",
+    "status": "found_in_store"
+  },
+  "120 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 2,
+      "request": {
+        "url": "https://registry.npmjs.org/nprogress/download/nprogress-0.2.0.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/nprogress/download/nprogress-0.2.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/nprogress/download/nprogress-0.2.0.tgz"
+  },
+  "121 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 2,
+      "request": {
+        "url": "https://registry.npmjs.org/screenfull/download/screenfull-5.1.0.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/screenfull/download/screenfull-5.1.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/screenfull/download/screenfull-5.1.0.tgz"
+  },
+  "122 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 2,
+      "request": {
+        "url": "https://registry.npmjs.org/path-browserify/download/path-browserify-1.0.1.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/path-browserify/download/path-browserify-1.0.1.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/path-browserify/download/path-browserify-1.0.1.tgz"
+  },
+  "123 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 2,
+      "request": {
+        "url": "https://registry.npmjs.org/mockjs/download/mockjs-1.1.0.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/mockjs/download/mockjs-1.1.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/mockjs/download/mockjs-1.1.0.tgz"
+  },
+  "124 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 2,
+      "request": {
+        "url": "https://registry.npmjs.org/plop/download/plop-2.7.4.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/plop/download/plop-2.7.4.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/plop/download/plop-2.7.4.tgz"
+  },
+  "125 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 2,
+      "request": {
+        "url": "https://registry.npmjs.org/path-to-regexp/download/path-to-regexp-6.2.0.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/path-to-regexp/download/path-to-regexp-6.2.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/path-to-regexp/download/path-to-regexp-6.2.0.tgz"
+  },
+  "126 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "code": "ERR_PNPM_FETCH_404",
+      "hint": "No authorization header was set for the request.",
+      "attempts": 2,
+      "request": {
+        "url": "https://registry.npmjs.org/axios/download/axios-0.21.1.tgz?cache=0&sync_timestamp=1608623177223&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.21.1.tgz"
+      },
+      "response": {
+        "size": 0
+      },
+      "resource": "https://registry.npmjs.org/axios/download/axios-0.21.1.tgz?cache=0&sync_timestamp=1608623177223&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.21.1.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/axios/download/axios-0.21.1.tgz?cache=0&sync_timestamp=1608623177223&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.21.1.tgz"
+  },
+  "127 warn pnpm:package-requester": {
+    "message": "Fetching registry.npmjs.org/mockjs/1.1.0 failed!",
+    "prefix": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin"
+  },
+  "128 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "No authorization header was set for the request.",
+    "attempts": 3,
+    "request": {
+      "url": "https://registry.npmjs.org/mockjs/download/mockjs-1.1.0.tgz"
+    },
+    "response": {
+      "size": 0
+    },
+    "resource": "https://registry.npmjs.org/mockjs/download/mockjs-1.1.0.tgz",
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/mockjs/download/mockjs-1.1.0.tgz: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmjs.org/mockjs/download/mockjs-1.1.0.tgz: Not Found - 404\n    at fetch (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:77645:21)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:77614:23)"
+    }
+  },
+  "129 warn pnpm:package-requester": {
+    "message": "Fetching registry.npmjs.org/path-browserify/1.0.1 failed!",
+    "prefix": "/Users/yaozhihao/www/thermofisher-tfsdg-signing-admin"
+  }
+}
